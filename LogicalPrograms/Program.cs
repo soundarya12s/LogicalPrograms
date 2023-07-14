@@ -18,7 +18,6 @@ namespace LineComparisonProgram
             switch (count)
             {
                 case 1:
-                    int n = Convert.ToInt32(Console.ReadLine());
                     f.FibonacciSeries();
                     break;
             }
