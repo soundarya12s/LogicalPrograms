@@ -11,7 +11,7 @@ namespace LineComparisonProgram
 
 
             Console.WriteLine("Logical programs: ");
-            Console.WriteLine("\n1.Fibonacci Series \n2.Perfect Number \n3.PrimeNumber\n4.ReverseNumber");
+            Console.WriteLine("\n1.Fibonacci Series \n2.Perfect Number \n3.PrimeNumber\n4.ReverseNumber\n5.Coupon\n6.StopWatch");
 
             int count = Convert.ToInt32(Console.ReadLine());
             
@@ -33,6 +33,15 @@ namespace LineComparisonProgram
                     ReverseNumber reverseNumber = new ReverseNumber();
                     reverseNumber.PrintReverseNumber();
                     break;
+                case 5:
+                    Coupon coupon = new Coupon();
+                    Coupon.GetCoupon();
+                    break;
+                case 6:
+                    StopWatch stopWatch = new StopWatch();
+                    stopWatch.Run();
+                    break;
+               
 
 
             }
