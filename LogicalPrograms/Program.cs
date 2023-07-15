@@ -11,16 +11,21 @@ namespace LineComparisonProgram
 
 
             Console.WriteLine("Logical programs: ");
-            Console.WriteLine("\n1.Fibonacci Series ");
+            Console.WriteLine("\n1.Fibonacci Series \n2.Perfect Number ");
 
             int count = Convert.ToInt32(Console.ReadLine());
             
             switch (count)
             {
                 case 1:
-                    int n = Convert.ToInt32(Console.ReadLine());
                     f.FibonacciSeries();
                     break;
+                case 2:
+                    PerfectNumber perfectNumber = new PerfectNumber();
+                    perfectNumber.CheckPerfectNumber();
+                    break;
+
+
             }
         }
     }
